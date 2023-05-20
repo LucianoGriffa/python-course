@@ -15,6 +15,7 @@
   - [Primer Hello World](#primer-hello-world)
   - [Tipos de Datos](#tipos-de-datos)
     - [Datos Simples](#datos-simples)
+  - [Variables](#variables)
 
 ---
 
@@ -99,3 +100,37 @@ lastname: griffa'''
 True
 False
 ``` 
+
+---
+
+#### [Variables](./Variables/variables.py)
+1. Definición de una variable con **camelCase**:
+```python 
+fullName = "Luciano Griffa"
+``` 
+En este caso, se define una variable llamada `fullName` utilizando la convención de nombres **camelCase**. Esto significa que la primera letra de la primera palabra está en minúscula y las primeras letras de las palabras subsiguientes están en mayúscula.
+
+2. Definición de una variable con **snake_case**:
+```python 
+full_name = "Luciano Griffa"
+``` 
+Aquí, se define una variable llamada `full_name` utilizando la convención de nombres **snake_case**. En esta convención, todas las letras están en minúscula y las palabras se separan con guiones bajos (_).
+
+3. Concatenación con el operador **+**:
+```python 
+welcome = "Hello " + " ¿How are you?"
+``` 
+Se realiza una concatenación de cadenas utilizando el operador **+**. En este caso, se concatenan las cadenas `"Hello"` y `" ¿How are you?"` y se guarda el resultado en la variable `welcome`.
+
+4. Concatenación con **f-strings**:
+```python 
+welcome = f"Hello {full_name} ¿How are you?"
+``` 
+Aquí, se utiliza la sintaxis de **f-strings** para realizar una interpolación de cadenas. La variable `full_name` se inserta en la cadena utilizando llaves `{}` y el prefijo `f`. Esto permite combinar de manera fácil y legible las variables con el texto dentro de la cadena.
+
+5. **Operadores de pertenencia** (in / not in):
+```python 
+print("Luciano" in welcome)  # True
+print("Luciano" not in welcome)  # False
+``` 
+Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"Luciano"` está presente en la cadena `welcome`. El operador in devuelve `True` si la subcadena se encuentra en la cadena y `False` en caso contrario. Por otro lado, el operador `not in` devuelve `True` si la subcadena no está presente y `False` si está presente.

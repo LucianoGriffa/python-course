@@ -13,6 +13,8 @@
   - [¿Qué es Python?](#qué-es-python)
   - [Características](#características)
   - [Primer Hello World](#primer-hello-world)
+  - [Tipos de Datos](#tipos-de-datos)
+    - [Datos Simples](#datos-simples)
 
 ---
 
@@ -67,3 +69,33 @@ python helloworld.py
 ![image](https://github.com/lucianogriffa/python-soydalto/assets/73656863/682c05bf-91d1-4e0c-a70f-f102b4fb0518)
 
 7. Verás que se imprime "Hello World" en la terminal.
+
+---
+
+### [Tipos de Datos](./DataTypes)
+#### [Datos Simples](./DataTypes/simple-data.py)
+- String - Texto
+```python
+"Luciano"
+
+'Griffa' 
+
+"""Your data is:
+name: luciano
+lastname: griffa"""
+
+'''Your data is:
+name: luciano
+lastname: griffa'''
+``` 
+- Int & Float - Números Enteros & Números Flotantes/Decimales
+```python
+10 # Int
+
+10.2 # Float
+``` 
+- Boolean - Booleano
+```python 
+True
+False
+``` 

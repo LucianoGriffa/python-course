@@ -4,14 +4,14 @@
 'Griffa' 
 
 """Your data is:
-      name: luciano
-      lastname: griffa"""
+			name: luciano
+			lastname: griffa"""
 
 '''Your data is:
-      name: luciano
-      lastname: griffa'''  
+			name: luciano
+			lastname: griffa'''
 
-# Int & Float - Numeros Enteros & Numeros Flotantes/Decimales
+# Int & Float - Números Enteros & Números Flotantes/Decimales
 10 # Int
 
 10.2 # Float

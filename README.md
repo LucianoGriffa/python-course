@@ -40,3 +40,29 @@ year = 2023
 - **Lenguaje Interpretado**: Es un lenguaje interpretado porque ejecuta el código fuente directamente, sin necesidad de compilarlo previamente, lo que permite una mayor flexibilidad y facilidad de uso en el desarrollo y la ejecución de programas. 
 
 ---
+
+#### Primer Hello World
+
+Para correr tu primer programa "Hello World" en Python, sigue estos pasos:
+
+1. Abre tu editor de texto o IDE favorito y crea un nuevo archivo con la extensión `.py`. Por ejemplo, [`helloworld.py`](./helloworld.py).
+
+2. Abre el archivo y escribe el siguiente código en él:
+
+```python
+print("Hello World")
+``` 
+3. Guarda el archivo.
+
+4. Abre una terminal o línea de comandos en tu sistema operativo.
+
+5. Navega hasta el directorio donde guardaste el archivo [`helloworld.py`](./helloworld.py) utilizando el comando cd.
+
+6. Ejecuta el siguiente comando en la terminal para correr el programa:
+
+```bash
+python helloworld.py
+``` 
+![image](https://github.com/lucianogriffa/python-soydalto/assets/73656863/682c05bf-91d1-4e0c-a70f-f102b4fb0518)
+
+7. Verás que se imprime "Hello World" en la terminal.

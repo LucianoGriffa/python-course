@@ -100,6 +100,39 @@ lastname: griffa'''
 True
 False
 ``` 
+#### [Datos Compuestos](./DataTypes/composite-data.py)
+- List (Lista):
+```python 
+list = ["Luciano", "Luciano Griffa", True, 1.80]
+``` 
+Las listas en Python son estructuras de datos que pueden ser modificadas, lo que significa que se pueden agregar, eliminar o modificar elementos después de su creación.
+
+- Tuple (Tupla):
+```python 
+tuple = ("Luciano", "Luciano Griffa", True, 1.80, "Tuple")
+``` 
+Aquí, se define una tupla llamada `tuple` que contiene varios elementos. Las tuplas son similares a las listas, pero a diferencia de ellas, las tuplas son inmutables, lo que significa que no se pueden modificar después de su creación.
+
+- Set (Conjunto):
+```python 
+set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
+``` 
+Se crea un conjunto llamado `set`. Los conjuntos son colecciones no ordenadas de elementos únicos. No se accede a los elementos por índice como en las listas y las tuplas. Los conjuntos no permiten elementos duplicados, por lo que si intentas agregar un elemento duplicado, no se almacenará en el conjunto.
+
+- Dictionary (Diccionario):
+```python 
+dictionary = {
+  'name': "Luciano",
+  'lastname': "Griffa",
+  'github': "@lucianogriffa",
+  'age': 17,
+  'duplicate_lastname': "Griffa"
+}
+print(dictionary['age'])
+``` 
+Aquí, se crea un diccionario llamado `dictionary` que contiene pares de `key: value`. Los diccionarios en Python son estructuras de datos que almacenan elementos asociados a una `key`. Cada elemento en el diccionario se compone de una `key` y un `value` separados por dos puntos (`:`).
+
+Para acceder a un valor en el diccionario, se utiliza la `key` correspondiente. Por ejemplo, `dictionary['age']` devuelve el valor 17.
 
 ---
 

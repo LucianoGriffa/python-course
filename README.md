@@ -3,7 +3,6 @@
   <h1>Curso de Python desde cero y en Español</h1>
   
   <i>Curso impartido en YouTube por [@SoyDalto](https://www.youtube.com/@soydalto)</i>
-  <i>y repositorio detallado por [@lucianogriffa](https://github.com/lucianogriffa)</i>
   
   <i><sup>Deja tu :star: si te gusta el proyecto.</sup></i>
 </div>

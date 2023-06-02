@@ -11,5 +11,5 @@ division = 10 / 5
 exponentiation = 15 ** 5
 # Floor division - División baja (//)
 floor_division = 12 // 6
-# Modulus - Módulo (%)
+# Modulus - Módulo o Resto (%)
 modulus = 18 % 6

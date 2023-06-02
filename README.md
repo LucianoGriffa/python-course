@@ -174,43 +174,57 @@ Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"L
 #### [Operadores Aritméticos](./Operators/arithmetic_operators.py)
 
 Addition - Suma (+)
+
 **Se utiliza para sumar dos valores y devuelve la suma de ambos.**
+
 ```python
 addition = 2 + 2 # Result 4
 ```
 
 Subtraction - Resta (-)
+
 **Se utiliza para restar un valor de otro y devuelve la diferencia.**
+
 ```python
 subtraction = 4 - 2 # Result: 2
 ```
 
 Multiplication - Multiplicación (*)
+
 **Se utiliza para multiplicar dos valores y devuelve el producto.**
+
 ```python
 multiplication = 2 * 3 # Result: 6
 ```
 
 Division - División (/)
+
 **Se utiliza para dividir un valor por otro y devuelve un resultado decimal o de tipo float.**
+
 ```python
 division = 10 / 5 # Result: 2.0
 ```
 
 Exponentiation - Exponenciación (**)
+
 **Se utiliza para elevar un valor a una potencia y devuelve el resultado.**
+
 ```python
 exponentiation = 3 ** 5 # Result: 243
 ```
 
 Floor division - División baja (//)
+
 **Se utiliza para realizar una división entera y devuelve un resultado entero redondeado hacia abajo.**
+
 ```python
 floor_division = 12 // 7 # Result: 1
 ```
 
 Modulus - Módulo o Resto (%)
+
 **Se utiliza para obtener el resto de una división y devuelve el resultado.**
+
 ```python
 modulus = 18 % 10 # Result: 8
 ```

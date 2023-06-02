@@ -284,8 +284,10 @@ else:
 ```
 En este ejemplo, se define una variable `age` con el valor de 18. Luego, se utilizan las estructuras condicionales `if`, `elif`  y `else` para determinar en qué categoría de edad se encuentra la persona.
 
-**Si la edad es menor a 18, se imprimirá "Eres menor de edad".
-Si la edad es igual o mayor a 18 y menor a 65, se imprimirá "Eres adulto".
-Si la edad es igual o mayor a 65, se imprimirá "Eres un adulto mayor".**
+- **Si la edad es menor a 18, se imprimirá "Eres menor de edad".**
+
+- **Si la edad es igual o mayor a 18 y menor a 65, se imprimirá "Eres adulto".**
+
+- **Si la edad es igual o mayor a 65, se imprimirá "Eres un adulto mayor".**
 
 En este caso, como la edad es 20, se imprimirá "Eres adulto". Puedes modificar el valor de la variable `age` para probar diferentes resultados.

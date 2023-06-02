@@ -21,6 +21,8 @@
     - [Operadores de Comparación](#operadores-de-comparación)
     - [Operadores Lógicos](#operadores-lógicos)
   - [Condicionales](#condicionales)
+  - [Métodos](#métodos)
+    - [Métodos de Cadenas](#métodos-de-cadenas)
 
 ---
 
@@ -324,3 +326,86 @@ En este ejemplo, se define una variable `age` con el valor de 18. Luego, se util
 - **Si la edad es igual o mayor a 65, se imprimirá "Eres un adulto mayor".**
 
 En este caso, como la edad es 20, se imprimirá "Eres adulto". Puedes modificar el valor de la variable `age` para probar diferentes resultados.
+
+---
+
+#### [Métodos](./Methods/)
+
+---
+
+#### [Métodos de Cadenas](./Methods/string_method.py)
+
+```python
+cadena = "Hola, Maquina! ¿Cómo Estás?"
+```
+
+`dir()`: **Muestra los atributos y métodos disponibles para un objeto.**
+```python
+print(dir(cadena))
+```
+
+`lower()`: **Convierte la cadena a minúsculas.**
+```python
+print(cadena.lower())  # "hola, maquina! ¿cómo estás?"
+```
+
+`upper()`: **Convierte la cadena a mayúsculas.**
+```python
+print(cadena.upper())  # "HOLA, MAQUINA! ¿CÓMO ESTÁS?"
+```
+
+`capitalize()`: **Convierte la primera letra de la cadena a mayúscula y el resto a minúsculas.**
+```python
+print(cadena.capitalize())  # "Hola, maquina! ¿cómo estás?"
+```
+
+`isalpha()`: **Verifica si la cadena contiene solo caracteres alfabéticos.**
+```python
+print(cadena.isalpha())  # False
+```
+
+`split()`: **Divide la cadena en una lista de subcadenas utilizando un delimitador.**
+```python
+print(cadena.split())  # ['Hola,', 'Maquina!', '¿Cómo', 'Estás?']
+```
+
+`replace()`: **Reemplaza una subcadena por otra en la cadena original.**
+```python
+print(cadena.replace("Estás", "Hola"))  # "Hola, Maquina! ¿Cómo Hola?"
+```
+
+`endswith()`: **Verifica si la cadena termina con una subcadena específica.**
+```python
+print(cadena.endswith("?"))  # True
+```
+
+`startswith()`: **Verifica si la cadena comienza con una subcadena específica.**
+```python
+print(cadena.startswith("Hola"))  # True
+```
+
+`len()`: **Devuelve la longitud (cantidad de caracteres) de la cadena.**
+```python
+print(len(cadena))  # 23
+```
+
+`count()`: **Cuenta las ocurrencias de una subcadena en la cadena.**
+```python
+print(cadena.count("a"))  # 4
+```
+
+`isnumeric()`: **Verifica si la cadena contiene solo caracteres numéricos.**
+```python
+print(cadena.isnumeric())  # False
+```
+
+`index()`: **Devuelve la posición de la primera aparición de una subcadena en la cadena.**
+```python
+print(cadena.index("Maquina"))  # 6
+```
+
+`find()`: **Busca la primera aparición de una subcadena en la cadena y devuelve su posición (-1 si no se encuentra).**
+```python
+print(cadena.find("¿"))  # 16
+```
+

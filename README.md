@@ -14,6 +14,7 @@
   - [Primer Hello World](#primer-hello-world)
   - [Tipos de Datos](#tipos-de-datos)
     - [Datos Simples](#datos-simples)
+    - [Datos Compuestos](#datos-compuestos)
   - [Variables](#variables)
 
 ---

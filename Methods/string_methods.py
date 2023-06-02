@@ -1,4 +1,5 @@
 # String Methods - Métodos de Cadenas
+
 cadena = "Hola, Maquina! ¿Cómo Estás?"
 
 # dir(): Muestra los atributos y métodos disponibles para un objeto

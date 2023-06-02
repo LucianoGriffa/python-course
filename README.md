@@ -16,7 +16,9 @@
     - [Datos Simples](#datos-simples)
     - [Datos Compuestos](#datos-compuestos)
   - [Variables](#variables)
-  - [Operadores Aritméticos](#operadores-aritméticos)
+  - [Operadores](#operadores)
+    - [Operadores Aritméticos](#operadores-aritméticos)
+    - [Operadores de Comparación](#operadores-de-comparación)
 
 ---
 
@@ -171,6 +173,8 @@ Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"L
 
 ---
 
+#### [Operadores](./Operators/)
+
 #### [Operadores Aritméticos](./Operators/arithmetic_operators.py)
 
 Addition - Suma (+)
@@ -221,4 +225,38 @@ Modulus - Módulo o Resto (%)
 
 ```python
 modulus = 18 % 10 # Result: 8
+```
+
+---
+
+#### [Operadores de Comparación](./Operators/comparison_operators.py)
+
+Equal - Igual que
+```python
+x == y 
+```
+
+Not equal - Distinto de
+```python
+x != y
+```
+
+Greater than - Mayor que
+```python
+x > y
+```
+
+Less than - Menor que
+```python
+x < y
+```
+
+Greater than or equal to - Mayor que o igual que
+```python
+x >= y 
+```
+
+Less than or equal to - Menor que o igual que
+```python
+x <= y
 ```

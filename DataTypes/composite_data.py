@@ -8,7 +8,7 @@ tuple = ("Luciano", "Luciano Griffa", True, 1.80, "Tuple")
 set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
 #print(set[1]) -> (can't access element - no puede acceder al elemento)
 
-#Dictionary (The structure is key: value) - Diccionario (La estructura es key: value  )
+#Dictionary (The structure is key: value) - Diccionario (La estructura es key: value)
 dictionary = {
   'name': "Luciano",
   'lastname': "Griffa",

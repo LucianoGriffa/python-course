@@ -359,7 +359,7 @@ print(cadena.upper())  # "HOLA, MAQUINA! ¿CÓMO ESTÁS?"
 print(cadena.capitalize())  # "Hola, maquina! ¿cómo estás?"
 ```
 
-`isalpha()`: **Verifica si la cadena contiene solo caracteres alfabéticos.**
+`isalpha()`: **Verifica si la cadena contiene solo caracteres alfabéticos.(Los espacios no son caracteres alfabéticos)**
 ```python
 print(cadena.isalpha())  # False
 ```

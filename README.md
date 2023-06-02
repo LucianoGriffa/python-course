@@ -175,23 +175,17 @@ Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"L
 
 Addition - Suma (+)
 
-**Se utiliza para sumar dos valores y devuelve la suma de ambos.**
-
 ```python
 addition = 2 + 2 # Result 4
 ```
 
 Subtraction - Resta (-)
 
-**Se utiliza para restar un valor de otro y devuelve la diferencia.**
-
 ```python
 subtraction = 4 - 2 # Result: 2
 ```
 
 Multiplication - Multiplicación (*)
-
-**Se utiliza para multiplicar dos valores y devuelve el producto.**
 
 ```python
 multiplication = 2 * 3 # Result: 6
@@ -215,7 +209,7 @@ exponentiation = 3 ** 5 # Result: 243
 
 Floor division - División baja (//)
 
-**Se utiliza para realizar una división entera y devuelve un resultado entero redondeado hacia abajo.**
+**Se utiliza para realizar una división entera y devuelve un resultado entero(int) redondeado hacia abajo.**
 
 ```python
 floor_division = 12 // 7 # Result: 1

@@ -24,6 +24,7 @@
   - [Métodos](#métodos)
     - [Métodos de Cadenas](#métodos-de-cadenas)
     - [Métodos de Listas](#métodos-de-listas)
+    - [Métodos de Diccionario](#métodos-de-diccionario)
 
 ---
 
@@ -476,4 +477,41 @@ print(otra_lista)  # [1, 2, 4, 7, 9]
 ```python
 otra_lista.reverse()
 print(otra_lista)  # [9, 7, 4, 2, 1]
+```
+
+---
+
+#### [Métodos de Diccionario](./Methods/dictionary_methods.py)
+
+```python
+diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+```
+
+`get()`: **Obtiene el valor asociado a una clave, devuelve None si la clave no existe.**
+```python
+print(diccionario.get("nombre"))  # "Juan"
+print(diccionario.get("altura"))  # None
+```
+
+`keys()`: **Devuelve una lista con todas las claves del diccionario.**
+```python
+print(diccionario.keys())  # ["nombre", "edad", "ciudad"]
+```
+
+`clear()`: **Elimina todos los elementos del diccionario.**
+```python
+diccionario.clear()
+print(diccionario)  # {}
+```
+
+`pop()`: **Elimina y devuelve el valor asociado a una clave específica.**
+```python
+valor_eliminado = diccionario.pop("edad")
+print(valor_eliminado)  # 30
+print(diccionario)  # {"nombre": "Juan", "ciudad": "Madrid"}
+```
+
+`items()`: **Devuelve una lista de tuplas (clave, valor) de todos los elementos del diccionario.**
+```python
+print(diccionario.items())  # [("nombre", "Juan"), ("ciudad", "Madrid")]
 ```

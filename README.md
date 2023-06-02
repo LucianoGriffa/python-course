@@ -19,6 +19,7 @@
   - [Operadores](#operadores)
     - [Operadores Aritméticos](#operadores-aritméticos)
     - [Operadores de Comparación](#operadores-de-comparación)
+  - [Condicionales](#condicionales)
 
 ---
 
@@ -260,3 +261,31 @@ Less than or equal to - Menor que o igual que
 ```python
 x <= y
 ```
+
+---
+
+#### [Condicionales](./COnditionals/conditionals.py)
+
+**`if`** se utiliza para ejecutar un bloque de código si una condición es verdadera.
+
+**`else`** se utiliza para ejecutar un bloque de código **cuando todas las condiciones anteriores son falsas**.
+
+**`elif`** se utiliza para evaluar múltiples condiciones y ejecutar el bloque de código correspondiente al primer elif cuya condición sea verdadera, siempre y cuando las condiciones anteriores sean falsas.
+
+Ejemplo:
+```python
+age = 20
+if age < 18:
+    print("Eres menor de edad")
+elif age >= 18 and age < 65:
+    print("Eres adulto")
+else:
+    print("Eres un adulto mayor")
+```
+En este ejemplo, se define una variable `age` con el valor de 18. Luego, se utilizan las estructuras condicionales `if`, `elif`  y `else` para determinar en qué categoría de edad se encuentra la persona.
+
+**Si la edad es menor a 18, se imprimirá "Eres menor de edad".
+Si la edad es igual o mayor a 18 y menor a 65, se imprimirá "Eres adulto".
+Si la edad es igual o mayor a 65, se imprimirá "Eres un adulto mayor".**
+
+En este caso, como la edad es 20, se imprimirá "Eres adulto". Puedes modificar el valor de la variable `age` para probar diferentes resultados.

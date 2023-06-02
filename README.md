@@ -19,6 +19,7 @@
   - [Operadores](#operadores)
     - [Operadores Aritméticos](#operadores-aritméticos)
     - [Operadores de Comparación](#operadores-de-comparación)
+    - [Operadores Lógicos](#operadores-lógicos)
   - [Condicionales](#condicionales)
 
 ---
@@ -264,7 +265,39 @@ x <= y
 
 ---
 
-#### [Condicionales](./COnditionals/conditionals.py)
+#### [Operadores Lógicos](./Operators/logical_operators.py)
+
+Operador `and`: **Devuelve True si ambas expresiones son verdaderas, de lo contrario, devuelve False. Se puede usar `&` o `and`.** 
+
+Ejemplos:
+```python
+Resultado = True & True # Devolver True
+Resultado2 = False and True # Devolver Falso
+Resultado3 = True & False # Devolver Falso
+Resultado4 = False and False # Devolver Falso
+```
+
+Operador `or`: **Devuelve True si al menos una de las expresiones es verdadera, de lo contrario, devuelve False. Se puede usar `|` o `or`.** 
+
+Ejemplos:
+```python
+Resultado5 = True or True #Devolver True
+Resultado6 = False | True #Devolver True
+Resultado7 = True or False #Devolver True
+Resultado8 = False | False #Devolver Falso
+```
+
+Operador `not`: **Devuelve True si la expresión es falsa, y False si la expresión es verdadera. Es un operador unario, ya que solo actúa sobre una expresión.** 
+
+Ejemplos:
+```python
+Resultado9 = not True #Devolver Falso
+Resultado10 = not False #Devolver True
+```
+
+---
+
+#### [Condicionales](./Conditionals/conditionals.py)
 
 **`if`** se utiliza para ejecutar un bloque de código si una condición es verdadera.
 

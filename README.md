@@ -16,6 +16,7 @@
     - [Datos Simples](#datos-simples)
     - [Datos Compuestos](#datos-compuestos)
   - [Variables](#variables)
+  - [Operadores Aritméticos](#operadores-aritméticos)
 
 ---
 
@@ -167,3 +168,57 @@ print("Luciano" in welcome)  # True
 print("Luciano" not in welcome)  # False
 ``` 
 Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"Luciano"` está presente en la cadena `welcome`. El operador in devuelve `True` si la subcadena se encuentra en la cadena y `False` en caso contrario. Por otro lado, el operador `not in` devuelve `True` si la subcadena no está presente y `False` si está presente.
+
+---
+
+#### [Operadores Aritméticos](./Operators/arithmetic_operators.py)
+
+Addition - Suma (+)
+
+```python
+addition = 2 + 2 # Result 4
+```
+
+Subtraction - Resta (-)
+
+```python
+subtraction = 4 - 2 # Result: 2
+```
+
+Multiplication - Multiplicación (*)
+
+```python
+multiplication = 2 * 3 # Result: 6
+```
+
+Division - División (/)
+
+**Se utiliza para dividir un valor por otro y devuelve un resultado decimal o de tipo float.**
+
+```python
+division = 10 / 5 # Result: 2.0
+```
+
+Exponentiation - Exponenciación (**)
+
+**Se utiliza para elevar un valor a una potencia y devuelve el resultado.**
+
+```python
+exponentiation = 3 ** 5 # Result: 243
+```
+
+Floor division - División baja (//)
+
+**Se utiliza para realizar una división entera y devuelve un resultado entero(int) redondeado hacia abajo.**
+
+```python
+floor_division = 12 // 7 # Result: 1
+```
+
+Modulus - Módulo o Resto (%)
+
+**Se utiliza para obtener el resto de una división y devuelve el resultado.**
+
+```python
+modulus = 18 % 10 # Result: 8
+```

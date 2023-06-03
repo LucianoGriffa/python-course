@@ -25,6 +25,7 @@
     - [Métodos de Cadenas](#métodos-de-cadenas)
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
+  - [Inputs](#inputs)
 
 ---
 
@@ -515,3 +516,41 @@ print(diccionario)  # {"nombre": "Juan", "ciudad": "Madrid"}
 ```python
 print(diccionario.items())  # [("nombre", "Juan"), ("ciudad", "Madrid")]
 ```
+
+---
+
+#### [Inputs](#inputs)
+
+`input()` se utiliza para obtener la entrada del usuario, y **los valores ingresados se tratan como cadenas de texto**. Puedes convertirlos a otros tipos de datos según sea necesario, con `int()` y `float()`.
+
+Obtener una cadena de texto desde el usuario:
+```python
+texto = input("Ingresa una cadena de texto: ")
+print("El texto que ingresaste es:", texto)
+```
+
+Obtener un float o número decimal desde el usuario
+```python
+numero_decimal = float(input("Ingresa un número decimal: "))
+print("El número decimal que ingresaste es:", numero_decimal)
+```
+
+Obtener un int o número entero desde el usuario
+```python
+number = int(input("Ingresa un número entero: "))
+print("El número entero que ingresaste es:", number)
+```
+
+Obtener varios valores en una sola línea separados por espacios y almacenarlos en una lista:
+```python
+valores = input("Ingresa varios valores separados por espacios: ").split()
+print("Los valores que ingresaste son:", valores)
+```
+
+Obtener varios números en una sola línea separados por comas y almacenarlos en una lista de enteros:
+```python
+numeros = [int(x) for x in input("Ingresa varios números separados por comas: ").split(",")]
+print("Los números que ingresaste son:", numeros)
+```
+
+---

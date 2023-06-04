@@ -558,7 +558,7 @@ print("Los números que ingresaste son:", numeros)
 
 ---
 
-#### [Ejercicios 1.0](./Exercises/.py)
+#### [Ejercicios 1](./Exercises/.py)
 
 #### [Ejercicios 1.1](./Exercises/.py):
 

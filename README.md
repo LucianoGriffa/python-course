@@ -579,5 +579,20 @@ Teniendo en cuenta que **el crudo de los demás cursos es de 5hs y con edición 
 
 #### [Ejercicio 1.2](./Exercises/.py): 
 
+Suponiendo que cada persona promedio habla 2 palabras por segundo.
+
+**a**) Pedirle al usuario que diga cualquier texto real y:
+  - Calcular cuanto taradaría en decir esa frase.
+  - ¿Cuantas palabras dijo?
+
+**b**) Si tarda más de 1 minuto:
+  - Decirle: "para flaco tampoco te pedí un testamento".
+
+**c**) Cuanto tardaria Dalto en decirlo, ya que habla un 30% más rápido?
+
 [Resolución Ejercicio 1.1](./Exercises/exercise_1.1.py)
-[Resolución Ejercicio 1.2](./Exercises/exercise_1.1.py)
+[Resolución Ejercicio 1.2](./Exercises/exercise_1.2.py)
+
+---
+
+

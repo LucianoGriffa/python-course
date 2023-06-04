@@ -26,7 +26,7 @@
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
   - [Inputs](#inputs)
-  - [Ejercicio N°1](#ejercicio-n°1)
+  - [Ejercicio N°1](#ejercicio-N°1)
 
 ---
 

@@ -16,14 +16,14 @@
 
 # c) Ver 10hs de este curso a cuantas de otros cursos equivalen?
 
+# a)
+print("-----------------------")
+print("[+] Ejercicio 1 - (a):")
+
 mínimo = 2.5
 máximo = 7
 promedio = 4
 este_curso = 1.5
-
-# a)
-print("-----------------------")
-print("[+] Ejercicio 1 - (a):")
 
 diferencia_uno = 100 - (este_curso / mínimo) * 100
 print(f"El curso de dalto dura {diferencia_uno}% menos, que el más rapido de los otros cursos.")

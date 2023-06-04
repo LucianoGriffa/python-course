@@ -1,4 +1,4 @@
-# Exercise One - Ejercicio Uno
+# Exercise 1.1 - Ejercicio 1.1
 
 # El timing para ver los conceptos vistos en python en un curso de corrido es de 
 # 2.5hs como Mínimo, 7hs como Máximo y 4hs en Promedio. Este curso lo logro en 1.5hs.

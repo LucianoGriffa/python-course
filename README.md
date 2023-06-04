@@ -26,6 +26,7 @@
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
   - [Inputs](#inputs)
+  - [Ejercicio 1](#ejercicio-1)
 
 ---
 
@@ -519,7 +520,7 @@ print(diccionario.items())  # [("nombre", "Juan"), ("ciudad", "Madrid")]
 
 ---
 
-#### [Inputs](#inputs)
+#### [Inputs](./Inputs/inputs.py)
 
 `input()` se utiliza para obtener la entrada del usuario, y **los valores ingresados se tratan como cadenas de texto**. Puedes convertirlos a otros tipos de datos según sea necesario, con `int()` y `float()`.
 
@@ -554,3 +555,22 @@ print("Los números que ingresaste son:", numeros)
 ```
 
 ---
+
+#### [Ejercicio 1](./Exercises/exercise_one.py)
+
+El timing para ver los conceptos vistos en python en un curso de corrido es de **2.5hs como Mínimo, 7hs como Máximo y 4hs en Promedio**. **Este curso lo logro en 1.5hs**.
+
+**a**) Cuánta diferencia en porcentaje entre el curso actual y:
+   - El más rápido de otros cursos.
+   - El más lento de otros cursos.
+   - El promedio de los cursos.
+
+Teniendo en cuenta que **el crudo de los demás cursos es de 5hs y con edición lo convierten en 4hs y el crudo de este curso 3.5hs y se redujo a 1.5hs.**
+
+**b**) Qué porcentaje de material inservible que se reduce en:
+  - El promedio de los cursos.
+  - El curso actual (este curso).
+
+**c**) Ver 10hs de este curso a cuantas de otros cursos equivalen?
+
+[Resolución Ejercicio N°1](./Exercises/exercise_one.py)

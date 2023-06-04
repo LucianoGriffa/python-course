@@ -26,7 +26,9 @@
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
   - [Inputs](#inputs)
-  - [Ejercicio 1](#ejercicio-1)
+  - [Ejercicio 1.0](#ejercicio-1.0)
+    - [Ejercicio 1.1](#ejercicio-1.1)
+    - [Ejercicio 1.2](#ejercicio-1.2)
 
 ---
 
@@ -556,7 +558,9 @@ print("Los números que ingresaste son:", numeros)
 
 ---
 
-#### [Ejercicio 1](./Exercises/exercise_one.py)
+#### [Ejercicios 1.0](./Exercises/.py)
+
+##### Ejercicio 1.1:
 
 El timing para ver los conceptos vistos en python en un curso de corrido es de **2.5hs como Mínimo, 7hs como Máximo y 4hs en Promedio**. **Este curso lo logro en 1.5hs**.
 
@@ -573,4 +577,7 @@ Teniendo en cuenta que **el crudo de los demás cursos es de 5hs y con edición 
 
 **c**) Ver 10hs de este curso a cuantas de otros cursos equivalen?
 
-[Resolución Ejercicio N°1](./Exercises/exercise_one.py)
+##### Ejercicio 1.2: 
+
+[Resolución Ejercicio 1.1](./Exercises/exercise_1.1.py)
+[Resolución Ejercicio 1.2](./Exercises/exercise_1.1.py)

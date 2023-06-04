@@ -26,7 +26,7 @@
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
   - [Inputs](#inputs)
-  - [Ejercicio N°1](#ejercicio-N°1)
+  - [Ejercicio N°1](#ejercicio-1)
 
 ---
 
@@ -556,7 +556,7 @@ print("Los números que ingresaste son:", numeros)
 
 ---
 
-#### [Ejercicio N°1](./Exercises/exercise_one.py)
+#### [Ejercicio 1](./Exercises/exercise_one.py)
 
 El timing para ver los conceptos vistos en python en un curso de corrido es de **2.5hs como Mínimo, 7hs como Máximo y 4hs en Promedio**. **Este curso lo logro en 1.5hs**.
 

@@ -49,6 +49,7 @@
     - [Ejercicio 2\.2](#ejercicio-22)
     - [Ejercicio 2\.3](#ejercicio-23)
   - [Módulos](#módulos)
+  - [Paquetes](#paquetes)
 
 ---
 
@@ -961,7 +962,7 @@ Hoy falto el profesor de clase y los chicos se organizaron para armar la suya pr
 
 ---
 
-#### Módulos
+#### [Módulos](./Modules)
 
 En Python, un módulo es un archivo que contiene definiciones de variables, funciones y clases que se pueden utilizar en otros programas. *Los módulos se utilizan para organizar y reutilizar código en proyectos más grandes*. Proporcionan una forma de dividir y estructurar el código en unidades lógicas y promueven la modularidad y la reutilización.
 
@@ -991,3 +992,25 @@ print(resultado)  # Salida: 5.0
 *En este ejemplo, se importa el módulo `math` y se utiliza la función `sqrt()` del módulo para calcular la raíz cuadrada de 25. Luego se imprime el resultado.*
 
 ---
+
+#### Paquetes
+
+En Python, un paquete es una forma de organizar y estructurar módulos relacionados. Un paquete es simplemente una carpeta (directorio) que contiene uno o más archivos de Python (módulos) y un archivo especial llamado `__init__.py`. El archivo `__init__.py` indica que la carpeta es un paquete y puede contener código de inicialización u otra lógica relacionada con el paquete.
+
+Los paquetes se utilizan para agrupar y organizar módulos relacionados de manera lógica. Proporcionan una forma de crear una jerarquía de módulos para proyectos más grandes y complejos.
+
+Aquí tienes un ejemplo de cómo se puede organizar un paquete en Python:
+
+Supongamos que tienes una carpeta llamada `mi_paquete` que contiene los siguientes archivos:
+```python
+mi_paquete/
+    __init__.py
+    modulo1.py
+    modulo2.py
+```
+
+El archivo `__init__.py` indica que la carpeta mi_paquete es un paquete. Este archivo puede estar vacío o puede contener código de inicialización o configuración del paquete.
+
+Los archivos `modulo1.py` y `modulo2.py` son módulos dentro del paquete `mi_paquete`. Estos archivos pueden contener funciones, clases u otras definiciones de Python relacionadas.
+
+Para utilizar los módulos dentro del paquete, se puede utilizar la declaración import de la siguiente manera:

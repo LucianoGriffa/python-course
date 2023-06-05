@@ -36,6 +36,8 @@
     - [Diccionarios](#diccionarios)
   - [Bucles](#bucles)
     - [For](#for)
+      - [Iterando Listas\, Tuplas y Conjuntos](#iterando-listas-tuplas-y-conjuntos)
+      - [Iterando Diccionarios](#iterando-diccionarios)
     - [While](#while)
   - [Funciones](#funciones)
     - [Funciones Integradas](#funciones-integradas)
@@ -729,6 +731,83 @@ dictionary_five = dict.fromkeys(["name", "lastname"], "Jajaj")
 #### [Bucles](./Loop)
 
 #### [For](./Loop)
+
+#### [Iterando Listas\, Tuplas y Conjuntos](./Loop)
+
+Iterando una lista, tupla o conjunto. (`animals` & `numbers`).
+```python
+animals = ["cat", "dog", "lion", "tiger", "fish"]
+for animal in animals:
+  print(animal)
+
+numbers = (10, 62, 42, 58)
+for number in numbers:
+  result = number * 10
+  print(result)
+```
+
+Iterando dos o más listas, tuplas o conjuntos en un solo bucle. (`animals` & `numbers`).
+```python
+for number, animal in zip(numbers, animals):
+  print(f"Iterating tuple 1: {number}")
+  print(f"Iterating list 2: {animal}")
+```
+
+Usamos `range`, que es una función incorporada que se utiliza para generar una secuencia de números enteros. Puede tomar uno, dos o tres argumentos y devuelve un objeto de tipo range, que es iterable.
+```python
+for num in range(5, 10):
+  print(num)
+```
+
+Forma no óptima de recorrer una lista o tupla con su indice. **(no funciona en conjuntos)**
+```python
+for num in range(len(numbers)):
+  print(numbers[num])
+```
+
+Forma óptima de recorrer una lista, tupla o conjunto.
+```python
+for num in enumerate(numbers):
+  index = num[0]
+  value = num[1]
+  print(f"The index is {index} and value is: {value}")
+```
+
+Usando el `for`/`else`.
+```python
+for number in numbers:
+  print(f"Value: {number}")
+else:
+  print(f"The loop ended")
+```
+
+#### [Iterando Diccionarios](#./Loop/iterate_dictionary.py)
+
+Creamos un diccionario.
+```python
+dictionary = {
+  "name": "Lucas",
+  "lastname":"Dalto",
+  "subs": 1000000
+}
+```
+
+Recorriendo el diccionario para obtener las claves.
+```python
+for key in dictionary:
+  key
+  print(f"The key is: {key}")
+```
+
+Diccionario iterativo con `items()` para obtener claves y valores.
+```python
+for data in dictionary.items():
+  key = data[0]
+  value = data[1]
+  print(f"The key is: {key} and the value is: {value}")
+```
+
+---
 
 #### [While](./Loop/while_loop.py)
 

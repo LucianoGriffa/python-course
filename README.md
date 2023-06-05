@@ -26,9 +26,21 @@
     - [Métodos de Listas](#métodos-de-listas)
     - [Métodos de Diccionario](#métodos-de-diccionario)
   - [Inputs](#inputs)
-  - [Ejercicio 1.0](#ejercicios-1)
-    - Ejercicio 1.1
-    - Ejercicio 1.2
+  - [Ejercicios 1.0](#ejercicios-10)
+    - [Ejercicio 1\.1](#ejercicio-11)
+    - [Ejercicio 1\.2](#ejercicio-12)
+  - [Variables 2.0](#variables-20)
+    - [Desempaquetado](#desempaquetado)
+    - [Tuplas](#tuplas)
+    - [Conjuntos](#conjuntos)
+    - [Diccionarios](#diccionarios)
+  - [Bucles](#bucles)
+    - [For](#for)
+    - [While](#while)
+  - [Funciones](#funciones)
+    - [Funciones Integradas](#funciones-integradas)
+    - [Creando Funciones Propias](#creando-funciones-propias)
+    - [Funciones Lambda](#funciones-lambda)
 
 ---
 
@@ -558,9 +570,9 @@ print("Los números que ingresaste son:", numeros)
 
 ---
 
-#### [Ejercicios 1](./Exercises/.py)
+#### [Ejercicios 1\.0](./Exercises/)
 
-#### [Ejercicio 1.1](./Exercises/.py):
+#### [Ejercicio 1\.1](./Exercises/):
 
 El timing para ver los conceptos vistos en python en un curso de corrido es de **2.5hs como Mínimo, 7hs como Máximo y 4hs en Promedio**. **Este curso lo logro en 1.5hs**.
 
@@ -577,7 +589,7 @@ Teniendo en cuenta que **el crudo de los demás cursos es de 5hs y con edición 
 
 **c**) Ver 10hs de este curso a cuantas de otros cursos equivalen?
 
-#### [Ejercicio 1.2](./Exercises/.py): 
+#### [Ejercicio 1\.2](./Exercises/): 
 
 Suponiendo que cada persona promedio habla 2 palabras por segundo.
 
@@ -595,4 +607,144 @@ Suponiendo que cada persona promedio habla 2 palabras por segundo.
 
 ---
 
+#### [Variables 2\.0](./Variables)
 
+#### [Desempaquetado](./Variables/unpacked.py)
+
+Primero, creamos una tupla llamada data_in_tuple con los valores "Lucas", "Dalto" y 10000000.
+```python
+data_in_tuple = ("Lucas", "Dalto", 10000000) # Tuple - Tupla
+```
+
+Luego, creamos una lista llamada data_in_list con los valores 22, "Argentina" y "Soy Dalto".
+```python
+data_in_list = [22, "Argentina", "Soy Dalto"] # List - Lista
+```
+
+Después, desempaquetamos la tupla data_in_tuple en las variables name, lastname y subscribers. Esto significa que asignamos cada valor de la tupla a una variable individualmente.
+```python
+name, lastname, subscribers = data_in_tuple
+```
+
+Del mismo modo, desempaquetamos la lista data_in_list en las variables age, live y channel.
+```python
+age, live, channel = data_in_list
+```
+
+Finalmente, imprimimos los valores de las variables utilizando la función print() para mostrar los resultados esperados.
+```python
+print(name, lastname, subscribers) # Lucas Dalto 10000000
+print(age, live, channel) # 22, "Argentina", "Soy Dalto"
+```
+
+---
+
+#### [Tuplas](./Variables/tuples.py)
+
+Creamos una tupla llamada `tuple_one` utilizando la función `tuple()`. Se pasa una lista `['One', 'Two']` como argumento a la función `tuple()`, **lo cual convierte la lista en una tupla**. La tupla resultante contendrá los elementos `'One'` y `'Two'`.
+```python
+tuple_one = tuple(['One', 'Two'])
+```
+En esta linea se crea otra tupla llamada `tuple_two` sin utilizar paréntesis. Los elementos `'One'`, `'Two'` y `'Three'` están separados por comas. **Al no usar paréntesis, Python reconoce automáticamente que se está creando una tupla**.
+```python
+tuple_two = 'One', 'Two', 'Three'
+```
+
+Y por ultimo, en esta línea se crea una tupla llamada `tuple_three` con un solo elemento, `'One'`. La coma al final indica que se trata de una tupla de un solo elemento en lugar de simplemente una cadena.
+```python
+tuple_three = 'One',
+```
+Luego imprimimos las tres tuplas creadas anteriormente. Los valores de `tuple_one`, `tuple_two` y `tuple_three` se muestran en la salida separados por comas.
+```python
+print(tuple_one, tuple_two, tuple_three)
+```
+
+---
+
+#### [Conjuntos](./Variables/sets.py)
+
+
+Se crea un conjunto llamado set_one utilizando la función `set()`. Se pasa una lista `["Data One", "Data Two"]` como argumento, y el conjunto resultante contendrá los elementos `"Data One"` y `"Data Two"`.
+```python
+set_one = set(["Data One", "Data Two"])
+```
+
+En estas líneas, se crea un *conjunto inmutable* `set_two` utilizando la función `frozenset()`. Se pasa una lista `["Data One", "Data Two"]` como argumento. Luego, se crea un nuevo conjunto `set_three` que contiene `set_two`, junto con los elementos `"Data One"` y `"Data Two"``. Así, se pone un conjunto dentro de otro conjunto.
+```python
+set_two = frozenset(["Data One", "Data Two"])
+set_three = {set_two, "Data One", "Data Two"}
+```
+
+Aqui, se definen dos conjuntos: `set_1` que contiene los elementos 1, 3, 5 y 7, y `set_2` que contiene los elementos 1, 3 y 7.
+```python
+set_1 = {1, 3, 5, 7}
+set_2 = {1, 3, 7}
+```
+
+*Se comprueba si `set_2` es un subconjunto de `set_1`*. Se utiliza el método **`issubset()`** o el operador **`<=`**. El resultado se almacena en las variables `resultForm1Sub` y `resultForm2Sub`. Si `set_2` es un subconjunto de `set_1`, el resultado será `True`; de lo contrario, será `False`.
+```python
+resultForm1Sub = set_2.issubset(set_1)
+resultForm2Sub = set_2 <= set_1
+```
+
+Se verifica si `set_2` es un superconjunto de `set_1`. Se utiliza el método **`issuperset()`** o el operador **`>=`**. El resultado se almacena en las variables `resultForm1Super` y `resultForm2Super`. Si `set_2` es un superconjunto de `set_1`, el resultado será `True`; de lo contrario, será `False`.
+```python
+resultForm1Super = set_2.issuperset(set_1)
+resultForm2Super = set_2 >= set_1
+```
+
+Y por ultimo, en estas líneas se verifica si hay números en común entre `set_1` y `set_2`. Se utiliza el método **`isdisjoint()`** o el operador **`!=`**. El resultado se almacena en la variable `resultForm1`. Si los conjuntos son disjuntos y no tienen elementos en común, el resultado será `True`; de lo contrario, será `False`.
+```python
+resultForm1 = set_2.isdisjoint(set_1)
+resultForm1 = set_2 != set_1
+```
+
+---
+
+#### [Diccionarios](./Variables/dictionaries.py)
+
+Se crea un diccionario llamado `dictionary_one` utilizando la función `dict()`. *Se pasan pares clave-valor separados por coma para definir los elementos del diccionario*. En este caso, se define la clave `"name"` con el valor `"Lucas"` y la clave `"lastname"` con el valor `"Dalto"`.
+```python
+dictionary_one = dict(name="Lucas", lastname="Dalto")
+```
+
+*Estas líneas muestran cómo utilizar tuplas y conjuntos inmutables como claves en un diccionario*. En `dictionary_two`, se utiliza una tupla `("Dalto", "Lucas")` como clave con el valor `"Jajaj"`. En `dictionary_three`, se utiliza un conjunto inmutable `frozenset(["Dalto", "Lucas"])` como clave con el valor `"Jajaj"`. **Tanto las tuplas como los conjuntos inmutables se pueden utilizar como claves de diccionario porque son objetos inmutables en Python**.
+```python
+dictionary_two = {("Dalto", "Lucas"): "Jajaj"}
+dictionary_three = {frozenset(["Dalto", "Lucas"]): "Jajaj"}
+```
+
+En esta línea se crea un diccionario llamado `dictionary_four` utilizando el método `fromkeys()`. Se pasa una lista `["name", "lastname"]` como argumento para especificar las claves del diccionario. El valor por defecto para todas las claves es `None`.
+```python
+dictionary_four = dict.fromkeys(["name", "lastname"])
+```
+
+Aqui, se crea otro diccionario llamado `dictionary_five` utilizando el método `fromkeys()`. Se pasa la misma lista `["name", "lastname"]` como argumento, pero en este caso se especifica el valor por defecto como `"Jajaj"` para todas las claves.
+```python
+dictionary_five = dict.fromkeys(["name", "lastname"], "Jajaj")
+```
+
+---
+
+#### [Bucles](./Loop)
+
+#### [For](./Loop)
+
+#### [While](./Loop/while_loop.py)
+
+En esta línea se *inicializa* la variable `count` con el valor 0.
+```python
+count = 0
+```
+
+En este bucle `while`, *se ejecutará repetidamente el bloque de código dentro del bucle siempre que la condición count `<=` 10 sea verdadera*. En cada iteración del bucle, se imprime el valor actual de `count` y luego se incrementa en 1 utilizando el operador de asignación `+=`. Esto significa que se imprimirán los números del 0 al 10, ya que cuando count alcanza el valor 11, la condición se vuelve falsa y el bucle termina.
+```python
+while count <= 10:
+  print(count)
+  count += 1
+```
+
+Después del bucle, se imprime la cadena `"The while loop ended"`. *Esta línea se ejecuta después de que la condición del bucle se vuelva falsa y el bucle haya terminado su ejecución.*
+```python
+print("The while loop ended")
+```

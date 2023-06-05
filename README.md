@@ -42,6 +42,7 @@
   - [Funciones](#funciones)
     - [Funciones Integradas](#funciones-integradas)
     - [Creando Funciones Propias](#creando-funciones-propias)
+    - [Parametro Args](#parametro-args)
     - [Funciones Lambda](#funciones-lambda)
 
 ---
@@ -827,3 +828,96 @@ Después del bucle, se imprime la cadena `"The while loop ended"`. *Esta línea 
 ```python
 print("The while loop ended")
 ```
+
+---
+
+#### [Funciones](./Functions/)
+
+#### [Funciones Integradas](./Functions/build_in.py)
+
+Ejemplo. Tenemos una lista de numeros.
+```python
+numbers = [4, 7, 43, 20]
+```
+
+Utilizamos la funcion `max()` para encontrar el numero mayor de una lista.
+```python
+number_most_largest = max(numbers)
+```
+
+Utilizamos la funcion `min()` para encontrar el numero menor de una lista.
+```python
+number_most_smallest = min(numbers)
+```
+
+Redondeo a 6 decimales. Con `round()`.
+```python
+number = round(12.3456, 2) # round(number, decimal quantity)
+```
+
+Retorna False -> 0, vacio, False, None \ True -> distinto a 0, True, cadena, datos no vacio. Con `bool()`
+```python
+result_bool = bool(2)
+```
+
+Retorna True, si todos los valores son verdaderos. Con `all()`
+```python
+result_all = all([234, "True", [23654]])
+```
+
+Con `sum()`, podemos sumar todos los valores de un iterable.
+```python
+total_sum = sum(numbers)
+```
+
+#### [Creando Funciones Propias](./Functions/)
+
+##### [Crear Funciones](./Functions/create_functions.py)
+
+##### [Funciones Datos Extra](./Functions/extra_data_functions.py)
+
+#### [Parametro Args](./Functions/parameters_args.py)
+
+Cuando se trata de funciones regulares en Python, el parámetro `*args` se utiliza para pasar un número variable de argumentos posicionales a una función. La convención es usar el nombre args (aunque puede tener cualquier otro nombre) precedido por un asterisco (`*`) para indicar que se trata de una lista de argumentos.
+
+Aquí tienes un ejemplo de cómo utilizar `*args` en una función:
+
+```python
+def sumar(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+resultado = sumar(1, 2, 3, 4, 5)
+print(resultado)  # Salida: 15
+```
+
+En este ejemplo, la función sumar recibe un número variable de argumentos posicionales a través del parámetro `*args`. Dentro de la función, se itera sobre los elementos de args y se suma cada número al total. Finalmente, se devuelve el resultado.
+
+Cuando se llama a la función `sumar` con los valores 1, 2, 3, 4, 5, todos esos valores se agrupan en una tupla y se asignan a args. Luego, la función realiza la suma de todos los elementos de la tupla y devuelve el resultado, que es 15.
+
+*El uso de `*args` permite flexibilidad al definir funciones que pueden aceptar diferentes cantidades de argumentos posicionales*. **Esto puede ser útil cuando no se sabe de antemano cuántos argumentos se pasarán a la función**.
+
+#### [Funciones Lambda](./Functions/build_in.py)
+
+En Python, una función `lambda` es una *función anónima*, lo que significa que no se le asigna un nombre como una función regular definida con `def`. En cambio, se crea utilizando la palabra clave `lambda`. A diferencia de las funciones regulares, las funciones `lambda` **pueden ser definidas en una sola línea y son útiles para tareas sencillas y expresiones pequeñas**.
+
+La sintaxis básica de una función `lambda` es la siguiente:
+```python
+lambda argumentos: expresión
+```
+
+- *argumentos*: son los parámetros de entrada de la función `lambda`.
+- *expresión*: es la operación o cálculo que se realiza en la función `lambda` y se devuelve como resultado.
+
+Aquí hay un ejemplo de una función `lambda` que suma dos números:
+```python
+add = lambda x, y: x + y
+resultado = add(3, 5)
+print(resultado)  # Salida: 8
+```
+
+En este ejemplo, se crea una función lambda llamada add que toma dos argumentos x e y y devuelve la suma de ambos. Luego, se llama a la función add pasando los valores 3 y 5, y se almacena el resultado en la variable resultado. Finalmente, se imprime el resultado, que es 8.
+
+Las funciones lambda son especialmente útiles cuando se necesitan funciones pequeñas y simples, como en el caso de operaciones matemáticas básicas, filtrado de listas o transformaciones simples de datos. Se pueden utilizar junto con otras funciones de orden superior, como map, filter y reduce, para realizar operaciones rápidas y concisas en colecciones de datos.

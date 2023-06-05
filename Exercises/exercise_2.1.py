@@ -21,9 +21,14 @@ def get_students(students_quantity):
   return assitant,teacher
 
 while True:
-  inputInitial = int(input("Ingrese la cantidad de alumnos: "))
-  assitant,teacher = get_students(inputInitial)
-  print(f"El asistente es {assitant}")
-  print(f"El profesor es {teacher}")
-else:
-  print("¡Ingrese un número!")
+  try:
+    inputInitial = int(input("Ingrese la cantidad de alumnos: "))
+    assitant,teacher = get_students(inputInitial)
+    print(f"--------------------------")
+    print(f"El asistente es {assitant}")
+    print(f"--------------------------")
+    print(f"El profesor es {teacher}")
+    print(f"--------------------------")
+    break;
+  except:
+    print("¡Ingrese un número!")

@@ -48,6 +48,8 @@
     - [Ejercicio 2\.1](#ejercicio-21)
     - [Ejercicio 2\.2](#ejercicio-22)
     - [Ejercicio 2\.3](#ejercicio-23)
+  - [Módulos](#módulos)
+
 ---
 
 #### ¿Qué es Python?
@@ -956,5 +958,36 @@ Hoy falto el profesor de clase y los chicos se organizaron para armar la suya pr
 [Resolución Ejercicio 2.1](./Exercises/exercise_2.1.py)
 [Resolución Ejercicio 2.2](./Exercises/exercise_2.2.py)
 [Resolución Ejercicio 2.3](./Exercises/exercise_2.3.py)
+
+---
+
+#### Módulos
+
+En Python, un módulo es un archivo que contiene definiciones de variables, funciones y clases que se pueden utilizar en otros programas. *Los módulos se utilizan para organizar y reutilizar código en proyectos más grandes*. Proporcionan una forma de dividir y estructurar el código en unidades lógicas y promueven la modularidad y la reutilización.
+
+Los módulos en Python se usan para:
+
+- **Organizar el código**: Los módulos permiten agrupar funciones, variables y clases relacionadas en un solo archivo, lo que facilita la navegación y la comprensión del código.
+
+- **Reutilizar código**: Los módulos se pueden importar y utilizar en diferentes programas, lo que evita la duplicación de código y promueve la eficiencia y el mantenimiento.
+
+- **Compartir funcionalidades**: Los módulos pueden ser compartidos entre diferentes programadores o proyectos, lo que permite colaborar y utilizar bibliotecas externas para ampliar las capacidades de Python.
+
+Existen diferentes tipos de módulos en Python:
+
+- **Módulos estándar**: Son módulos que vienen incluidos en la instalación de Python. Proporcionan funcionalidades básicas y amplias, como manejo de archivos, matemáticas, acceso a la red, etc. Algunos ejemplos de módulos estándar son `os`, `math`, `random`, `datetime`, entre otros.
+
+- **Módulos de terceros**: Son módulos desarrollados por la comunidad de Python que no están incluidos en la instalación estándar. Estos módulos se pueden descargar e instalar utilizando administradores de paquetes, como `pip`. Ejemplos de módulos de terceros populares son `numpy`, `pandas`, `requests`, `matplotlib`, entre otros.
+
+- **Módulos personalizados**: Son módulos creados por el propio usuario para encapsular código personalizado. Estos módulos pueden ser archivos Python creados por el programador para agrupar funciones, clases y variables relacionadas en un proyecto específico.
+
+Para utilizar un módulo en Python, se utiliza la declaración `import` seguida del nombre del módulo. Por ejemplo:
+```python
+import math
+resultado = math.sqrt(25)
+print(resultado)  # Salida: 5.0
+```
+
+*En este ejemplo, se importa el módulo `math` y se utiliza la función `sqrt()` del módulo para calcular la raíz cuadrada de 25. Luego se imprime el resultado.*
 
 ---

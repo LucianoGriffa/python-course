@@ -44,7 +44,10 @@
     - [Creando Funciones Propias](#creando-funciones-propias)
     - [Parametro Args](#parametro-args)
     - [Funciones Lambda](#funciones-lambda)
-
+  - [Ejercicios 2.0](#ejercicios-20)
+    - [Ejercicio 2\.1](#ejercicio-21)
+    - [Ejercicio 2\.2](#ejercicio-22)
+    - [Ejercicio 2\.3](#ejercicio-23)
 ---
 
 #### ¿Qué es Python?
@@ -876,6 +879,8 @@ total_sum = sum(numbers)
 
 ##### [Funciones Datos Extra](./Functions/extra_data_functions.py)
 
+---
+
 #### [Parametro Args](./Functions/parameters_args.py)
 
 Cuando se trata de funciones regulares en Python, el parámetro `*args` se utiliza para pasar un número variable de argumentos posicionales a una función. La convención es usar el nombre args (aunque puede tener cualquier otro nombre) precedido por un asterisco (`*`) para indicar que se trata de una lista de argumentos.
@@ -899,6 +904,8 @@ Cuando se llama a la función `sumar` con los valores 1, 2, 3, 4, 5, todos esos 
 
 *El uso de `*args` permite flexibilidad al definir funciones que pueden aceptar diferentes cantidades de argumentos posicionales*. **Esto puede ser útil cuando no se sabe de antemano cuántos argumentos se pasarán a la función**.
 
+---
+
 #### [Funciones Lambda](./Functions/build_in.py)
 
 En Python, una función `lambda` es una *función anónima*, lo que significa que no se le asigna un nombre como una función regular definida con `def`. En cambio, se crea utilizando la palabra clave `lambda`. A diferencia de las funciones regulares, las funciones `lambda` **pueden ser definidas en una sola línea y son útiles para tareas sencillas y expresiones pequeñas**.
@@ -921,3 +928,33 @@ print(resultado)  # Salida: 8
 En este ejemplo, se crea una función lambda llamada add que toma dos argumentos x e y y devuelve la suma de ambos. Luego, se llama a la función add pasando los valores 3 y 5, y se almacena el resultado en la variable resultado. Finalmente, se imprime el resultado, que es 8.
 
 Las funciones lambda son especialmente útiles cuando se necesitan funciones pequeñas y simples, como en el caso de operaciones matemáticas básicas, filtrado de listas o transformaciones simples de datos. Se pueden utilizar junto con otras funciones de orden superior, como map, filter y reduce, para realizar operaciones rápidas y concisas en colecciones de datos.
+
+---
+
+#### [Ejercicios 2\.0](./Exercises/)
+
+#### [Ejercicio 2\.1](./Exercises/):
+
+Hoy falto el profesor de clase y los chicos se organizaron para armar la suya propia.
+
+*1 Alumno va a ser el profesor.*
+*1 Alumno va a ser su asistente.*
+
+**a**) **Pedir el nombre y la edad de los compañeros que vinieron hoy a clase y ordenar los datos de menor a mayor**.
+
+**b**) **El mayor de la clase es el profesor y el menor es el asistente: ¿Quién es quien?**.
+
+
+#### [Ejercicio 2\.2](./Exercises/): 
+
+**Crea una funcion que cuando le pasemos un numero, nos de numeros primos hasta llegar al numero ingresado**.
+
+#### [Ejercicio 2\.3](./Exercises/): 
+
+**Hacer una sucesion de [Fibonacci](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci)**.
+
+[Resolución Ejercicio 2.1](./Exercises/exercise_2.1.py)
+[Resolución Ejercicio 2.2](./Exercises/exercise_2.2.py)
+[Resolución Ejercicio 2.3](./Exercises/exercise_2.3.py)
+
+---

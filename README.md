@@ -56,6 +56,7 @@
   - [Gráficos](#gráficos)
   - [Excepciones](#excepciones)
   - [Expresiones Regulares](#expresiones-regulares)
+  - [Análisis de Expresiones Regulares](#análisis-de-expresiones-regulares)
 
 ---
 
@@ -1348,3 +1349,55 @@ print("Palabras:", palabras)
 En este ejemplo, utilizamos `re.split()` para dividir el texto en palabras utilizando el patrón `\W+` que coincide con uno o más caracteres que no son letras, números ni guiones bajos. El resultado se almacena en palabras y se imprime la lista de palabras.
 
 Estos son solo ejemplos básicos para ilustrar el uso de expresiones regulares en Python. Puedes explorar más funcionalidades y patrones avanzados en la documentación oficial del módulo `re`. Las expresiones regulares ofrecen un poderoso conjunto de herramientas para manipular y analizar texto de manera flexible y eficiente en Python.
+
+---
+
+### Análisis de Expresiones Regulares
+
+**El análisis de expresiones regulares implica desglosar una expresión regular en sus componentes individuales y comprender el significado y la funcionalidad de cada uno de ellos**. Aquí tienes una descripción de los principales elementos utilizados en las expresiones regulares:
+
+- **Literales**: *Los literales son caracteres simples que coinciden exactamente con ellos mismos*. Por ejemplo, el literal a coincidirá con la letra "a" en un texto.
+
+- **Metacaracteres**: *Los metacaracteres son caracteres con un significado especial en las expresiones regulares*. Algunos metacaracteres comunes incluyen:
+  - `.` (punto): Coincide con cualquier carácter excepto un salto de línea.
+  - `^` (circunflejo): Coincide con el comienzo de una línea.
+  - `$` (signo de dólar): Coincide con el final de una línea.
+  - `*` (asterisco): Coincide con cero o más repeticiones del elemento anterior.
+  - `+` (signo más): Coincide con una o más repeticiones del elemento anterior.
+  - `?` (signo de interrogación): Coincide con cero o una repetición del elemento anterior.
+  - `\` (barra invertida): Se utiliza para escapar metacaracteres y tratarlos como literales.
+
+- **Conjuntos de caracteres**: *Los conjuntos de caracteres se representan entre corchetes `[ ]` y permiten especificar un conjunto de caracteres posibles en un punto determinado de la coincidencia*. Por ejemplo, `[aeiou]` coincide con cualquier vocal.
+
+- **Cuantificadores**: *Los cuantificadores se utilizan para especificar la cantidad de repeticiones de un elemento*. Algunos cuantificadores comunes son:
+  - `{n}`: Coincide exactamente con n repeticiones del elemento anterior.
+  - `{n,}`: Coincide con al menos n repeticiones del elemento anterior.
+  - `{n,m}`: Coincide con entre n y m repeticiones del elemento anterior.
+
+- **Grupos y capturas**: *Los grupos se representan entre paréntesis `( )` y permiten agrupar elementos juntos y aplicar operaciones a todo el grupo. Los grupos también pueden utilizarse para capturar partes específicas de una coincidencia*. Por ejemplo, `(\d{2})-(\d{2})-(\d{4})` capturará una fecha en formato `DD-MM-YYYY` y permitirá acceder a los valores de día, mes y año por separado.
+
+Estos son solo algunos elementos básicos en el análisis de expresiones regulares. Las expresiones regulares pueden volverse mucho más complejas y poderosas al combinar múltiples elementos y aprovechar todas las funcionalidades que ofrecen. 
+
+Otro Ejemplo:
+```python
+import re
+
+# Expresión regular para buscar direcciones de correo electrónico
+patron = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
+
+# Texto de ejemplo
+texto = "Contacta conmigo en info@example.com o support@example.org"
+
+# Buscar todas las coincidencias de direcciones de correo electrónico
+coincidencias = re.findall(patron, texto)
+
+# Imprimir las direcciones de correo electrónico encontradas
+print("Direcciones de correo electrónico encontradas:")
+for correo in coincidencias:
+    print(correo)
+```
+En este ejemplo, utilizamos una expresión regular para buscar direcciones de correo electrónico en un texto. El patrón utilizado `r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"` busca una combinación de caracteres que coincida con el formato de una dirección de correo electrónico.
+
+Luego, utilizamos `re.findall()` para buscar todas las coincidencias de direcciones de correo electrónico en el texto. Este método devuelve una lista con todas las coincidencias encontradas.
+
+Finalmente, recorremos la lista de coincidencias e imprimimos cada dirección de correo electrónico encontrada.

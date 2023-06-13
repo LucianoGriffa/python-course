@@ -53,6 +53,7 @@
   - [Archivos](#archivos)
     - [Archivos TXT](#archivos-txt)
     - [Archivos CSV](#archivos-csv)
+  - [Gráficos](#gráficos)
 
 ---
 
@@ -1176,3 +1177,36 @@ apellidos = archive.iloc[:, 1]
 fila_3 = archive.loc[2, :]
 fila_3 = archive.iloc[2, :]
 ```
+
+### [Gráficos](./Graphic_Problem)
+
+Trabajar con gráficos en Python te permite visualizar y presentar datos de manera efectiva. Hay varias bibliotecas populares que puedes utilizar, como Matplotlib, Seaborn y Plotly. A continuación, te mostraré una breve descripción y un ejemplo utilizando la biblioteca Matplotlib.
+
+**Matplotlib**: Matplotlib es una biblioteca ampliamente utilizada para la visualización de datos en Python. Proporciona una amplia variedad de funciones y estilos para crear diferentes tipos de gráficos, como gráficos de líneas, gráficos de barras, gráficos de dispersión, gráficos de torta, histogramas, entre otros.
+
+Aquí hay un ejemplo básico de cómo crear un gráfico de líneas utilizando Matplotlib:
+
+```python
+import matplotlib.pyplot as plt
+
+# Datos
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+# Crear el gráfico
+plt.plot(x, y)
+
+# Agregar etiquetas y título
+plt.xlabel('Eje X')
+plt.ylabel('Eje Y')
+plt.title('Gráfico de Líneas')
+
+# Mostrar el gráfico
+plt.show()
+```
+
+En este ejemplo, primero importamos la biblioteca **Matplotlib** como `plt`. Luego, definimos los datos para el eje x e y en las listas x y y. A continuación, utilizamos `plt.plot()` para crear el gráfico de líneas con los datos proporcionados. Luego, agregamos etiquetas para los ejes `x` `e` y con `plt.xlabel()` y `plt.ylabel()`, respectivamente. También añadimos un título al gráfico utilizando `plt.title()`. Finalmente, llamamos a `plt.show()` para mostrar el gráfico en una ventana emergente.
+
+Esta es solo una introducción básica a la visualización de gráficos con Matplotlib. La biblioteca ofrece muchas más opciones y personalizaciones para adaptarse a tus necesidades específicas. Puedes explorar su documentación oficial para aprender más sobre cómo crear diferentes tipos de gráficos y ajustar su apariencia según tus preferencias.
+
+Recuerda que también puedes utilizar otras bibliotecas, como **Seaborn** y **Plotly**, que proporcionan funcionalidades adicionales y estilos predefinidos para la visualización de datos.

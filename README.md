@@ -4,7 +4,10 @@
   
   <i>Curso impartido en YouTube por [@SoyDalto](https://www.youtube.com/@soydalto)</i>
   
-  <i><sup>Deja tu :star: si te gusta el proyecto.</sup></i>
+  <i>Repository Created By @G3kSec</i>
+  
+  <i>Deja tu :star:</i>
+  
 </div>
  
 ## Indice 
@@ -1401,3 +1404,7 @@ En este ejemplo, utilizamos una expresión regular para buscar direcciones de co
 Luego, utilizamos `re.findall()` para buscar todas las coincidencias de direcciones de correo electrónico en el texto. Este método devuelve una lista con todas las coincidencias encontradas.
 
 Finalmente, recorremos la lista de coincidencias e imprimimos cada dirección de correo electrónico encontrada.
+
+--- 
+
+#### Repository Created By @G3kSec | 2023

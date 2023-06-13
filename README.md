@@ -1220,7 +1220,7 @@ Recuerda que también puedes utilizar otras bibliotecas, como **Seaborn** y **Pl
 
 ---
 
-### Excepciones
+### [Excepciones](./Exceptions)
 
 **Las excepciones en Python son eventos que ocurren durante la ejecución de un programa y pueden interrumpir el flujo normal del mismo**. Las excepciones permiten manejar errores y situaciones excepcionales de manera controlada. *Python proporciona una serie de excepciones integradas, y también puedes crear tus propias excepciones personalizadas*.
 

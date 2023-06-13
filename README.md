@@ -55,6 +55,7 @@
     - [Archivos CSV](#archivos-csv)
   - [Gráficos](#gráficos)
   - [Excepciones](#excepciones)
+  - [Expresiones Regulares](#expresiones-regulares)
 
 ---
 
@@ -1289,3 +1290,61 @@ En este ejemplo, se define la clase MiExcepcion que hereda de la clase base *Exc
 Dentro del bloque `try-except`, se llama a la función `lanzar_excepcion()`. Si se produce la excepción `MiExcepcion`, se captura en el bloque except y se muestra un mensaje personalizado utilizando `print()`.
 
 Recuerda que el uso de excepciones personalizadas te permite definir y manejar errores específicos de tu aplicación, brindando un control más preciso sobre las situaciones excepcionales que pueden surgir durante la ejecución del código.
+
+--- 
+
+### [Expresiones Regulares](./RegularExpressions)
+
+Las **expresiones regulares** (también conocidas como *regex*) **son patrones utilizados para buscar y manipular texto de manera eficiente**. Python ofrece el módulo `re` que proporciona funciones y métodos para trabajar con expresiones regulares. Aquí tienes una descripción y ejemplos de cómo utilizar expresiones regulares en Python:
+
+- Coincidencia básica:
+
+```python
+import re
+
+texto = "Hola, este es un ejemplo de texto."
+
+# Buscar una coincidencia de patrón
+patron = r"ejemplo"
+coincidencia = re.search(patron, texto)
+
+if coincidencia:
+    print("Se encontró una coincidencia:", coincidencia.group())
+else:
+    print("No se encontró ninguna coincidencia.")
+```
+En este ejemplo, utilizamos `re.search()` para buscar la primera ocurrencia del patrón "ejemplo" en el texto. Si se encuentra una coincidencia, se imprime el resultado utilizando `coincidencia.group()`. Si no se encuentra ninguna coincidencia, se muestra un mensaje indicando que no se encontró ninguna coincidencia.
+
+- Búsqueda y sustitución:
+```python
+import re
+
+texto = "Hola, este es un ejemplo de texto."
+
+# Buscar y reemplazar un patrón
+patron = r"ejemplo"
+reemplazo = "demo"
+nuevo_texto = re.sub(patron, reemplazo, texto)
+
+print("Texto original:", texto)
+print("Texto modificado:", nuevo_texto)
+```
+
+En este ejemplo, utilizamos `re.sub()` para buscar todas las ocurrencias del patrón "ejemplo" en el texto y reemplazarlas con la palabra "demo". El resultado se guarda en `nuevo_texto` y se muestra tanto el texto original como el modificado.
+
+- División de texto:
+
+```python
+import re
+
+texto = "Hola, este es un ejemplo de texto."
+
+# Dividir el texto en palabras
+palabras = re.split(r"\W+", texto)
+
+print("Palabras:", palabras)
+```
+
+En este ejemplo, utilizamos `re.split()` para dividir el texto en palabras utilizando el patrón `\W+` que coincide con uno o más caracteres que no son letras, números ni guiones bajos. El resultado se almacena en palabras y se imprime la lista de palabras.
+
+Estos son solo ejemplos básicos para ilustrar el uso de expresiones regulares en Python. Puedes explorar más funcionalidades y patrones avanzados en la documentación oficial del módulo `re`. Las expresiones regulares ofrecen un poderoso conjunto de herramientas para manipular y analizar texto de manera flexible y eficiente en Python.

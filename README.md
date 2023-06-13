@@ -54,6 +54,7 @@
     - [Archivos TXT](#archivos-txt)
     - [Archivos CSV](#archivos-csv)
   - [Gráficos](#gráficos)
+  - [Excepciones](#excepciones)
 
 ---
 
@@ -1024,6 +1025,8 @@ import mi_paquete.modulo1
 import mi_paquete.modulo2
 ```
 
+---
+
 ### Archivos
 
 ### [Archivos TXT](./TEX_Archives)
@@ -1070,6 +1073,8 @@ with open("TXT_Archives/notes.txt", 'w', encoding="UTF-8") as archive:
 ```
 
 Recuerda que al utilizar `with open()`, no es necesario cerrar el archivo explícitamente, ya que se cerrará automáticamente al finalizar el bloque with.
+
+---
 
 ### [Archivos CSV](./CSV_Archives)
 
@@ -1178,6 +1183,8 @@ fila_3 = archive.loc[2, :]
 fila_3 = archive.iloc[2, :]
 ```
 
+---
+
 ### [Gráficos](./Graphic_Problem)
 
 Trabajar con gráficos en Python te permite visualizar y presentar datos de manera efectiva. Hay varias bibliotecas populares que puedes utilizar, como Matplotlib, Seaborn y Plotly. A continuación, te mostraré una breve descripción y un ejemplo utilizando la biblioteca Matplotlib.
@@ -1210,3 +1217,75 @@ En este ejemplo, primero importamos la biblioteca **Matplotlib** como `plt`. Lue
 Esta es solo una introducción básica a la visualización de gráficos con Matplotlib. La biblioteca ofrece muchas más opciones y personalizaciones para adaptarse a tus necesidades específicas. Puedes explorar su documentación oficial para aprender más sobre cómo crear diferentes tipos de gráficos y ajustar su apariencia según tus preferencias.
 
 Recuerda que también puedes utilizar otras bibliotecas, como **Seaborn** y **Plotly**, que proporcionan funcionalidades adicionales y estilos predefinidos para la visualización de datos.
+
+---
+
+### Excepciones
+
+**Las excepciones en Python son eventos que ocurren durante la ejecución de un programa y pueden interrumpir el flujo normal del mismo**. Las excepciones permiten manejar errores y situaciones excepcionales de manera controlada. *Python proporciona una serie de excepciones integradas, y también puedes crear tus propias excepciones personalizadas*.
+
+Aquí tienes una descripción y ejemplos de cómo trabajar con excepciones en Python:
+
+- Bloque `try-except`: Puedes utilizar un bloque `try-except` para capturar y manejar excepciones específicas. El código que puede generar una excepción se coloca dentro del bloque `try`, y el código de manejo de excepciones se coloca dentro de uno o varios bloques `except`.
+
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 0  # División por cero
+except ZeroDivisionError:
+    # Código para manejar la excepción ZeroDivisionError
+    print("Error: División por cero")
+```
+
+En este ejemplo, el bloque `try` intenta realizar una operación de división por cero, lo cual generará la excepción **ZeroDivisionError**. El bloque except captura esta excepción específica y muestra un mensaje de error.
+
+- Bloque `try-except-except`: Puedes manejar múltiples excepciones utilizando varios bloques except.
+```python
+try:
+    # Código que puede generar excepciones
+    resultado = int("abc")  # Conversión de una cadena no numérica a entero
+    resultado = 10 / 0  # División por cero
+except ValueError:
+    # Código para manejar la excepción ValueError
+    print("Error: Valor no numérico")
+except ZeroDivisionError:
+    # Código para manejar la excepción ZeroDivisionError
+    print("Error: División por cero")
+```
+
+En este ejemplo, el bloque try intenta realizar una conversión de una cadena no numérica a entero, lo cual generará la excepción ValueError. Si se produce esta excepción, el primer bloque except captura y maneja el error. Si se genera una excepción de división por cero, el segundo bloque except se encargará de manejarla.
+
+- Bloque `try-except-finally`: Puedes utilizar un bloque `finally` para ejecutar un código sin importar si se produce una excepción o no.
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 2
+except ZeroDivisionError:
+    # Código para manejar la excepción ZeroDivisionError
+    print("Error: División por cero")
+finally:
+    # Código que se ejecuta siempre, haya o no una excepción
+    print("Fin del programa")
+```
+En este ejemplo, el bloque try realiza una operación de división válida. Si no se produce ninguna excepción, el bloque `finally` se ejecutará después del bloque `try-except`.
+
+- Excepciones personalizadas: Puedes crear tus propias excepciones personalizadas heredando de la clase base *Exception* o de una excepción existente.
+
+```python
+class MiExcepcion(Exception):
+    pass
+
+def lanzar_excepcion():
+    raise MiExcepcion("Este es un mensaje de excepción personalizada")
+
+try:
+    lanzar_excepcion()
+except MiExcepcion as e:
+    print("Error personalizado:", str(e))
+```
+
+En este ejemplo, se define la clase MiExcepcion que hereda de la clase base *Exception*. Luego, se crea una función llamada `lanzar_excepcion()` que utiliza la declaración raise para generar la excepción personalizada `MiExcepcion` con un mensaje específico.
+
+Dentro del bloque `try-except`, se llama a la función `lanzar_excepcion()`. Si se produce la excepción `MiExcepcion`, se captura en el bloque except y se muestra un mensaje personalizado utilizando `print()`.
+
+Recuerda que el uso de excepciones personalizadas te permite definir y manejar errores específicos de tu aplicación, brindando un control más preciso sobre las situaciones excepcionales que pueden surgir durante la ejecución del código.

@@ -50,6 +50,9 @@
     - [Ejercicio 2\.3](#ejercicio-23)
   - [Módulos](#módulos)
   - [Paquetes](#paquetes)
+  - [Archivos](#archivos)
+    - [Archivos TXT](#archivos-txt)
+    - [Archivos CSV](#archivos-csv)
 
 ---
 
@@ -1014,3 +1017,162 @@ El archivo `__init__.py` indica que la carpeta mi_paquete es un paquete. Este ar
 Los archivos `modulo1.py` y `modulo2.py` son módulos dentro del paquete `mi_paquete`. Estos archivos pueden contener funciones, clases u otras definiciones de Python relacionadas.
 
 Para utilizar los módulos dentro del paquete, se puede utilizar la declaración import de la siguiente manera:
+
+```python
+import mi_paquete.modulo1
+import mi_paquete.modulo2
+```
+
+### Archivos
+
+### [Archivos TXT](./TEX_Archives)
+
+**Los archivos de texto (.txt) en Python se utilizan para almacenar y leer datos en formato de texto plano**. Pueden contener cualquier tipo de información legible por humanos, como texto, números y símbolos.
+
+Para trabajar con archivos de texto en Python, puedes seguir los siguientes pasos:
+
+Abrir un archivo: Puedes abrir un archivo utilizando la función `open()`. Es recomendable utilizar el enfoque de `with` para asegurarse de que el archivo se cierre correctamente una vez que hayas terminado de trabajar con él. Aquí tienes un ejemplo:
+
+```python
+with open("TXT_Archives/notes.txt", encoding="UTF-8") as archive:
+    # Código para trabajar con el archivo
+```
+
+Para *leer un archivo TXT*, hay varias formas en Python:
+
+- `read()`: **Lee todo el contenido del archivo y lo devuelve como una cadena**.
+- `readlines()`: **Lee todas las líneas del archivo y devuelve una lista donde cada elemento es una línea del archivo**.
+- `readline([size])`: **Lee una línea completa del archivo**. Puedes proporcionar un argumento opcional size para especificar la cantidad de caracteres a leer.
+
+Aquí tienes un ejemplo de lectura de archivo:
+
+```python
+with open("TXT_Archives/notes.txt", encoding="UTF-8") as archive:
+    content = archive.read()  # Leer archivo completo
+    lines = archive.readlines()  # Leer archivo línea por línea
+    line = archive.readline(2)  # Leer una línea específica
+```
+
+Escribir en un archivo: Puedes escribir en un archivo utilizando los métodos `write()` y `writelines()`:
+
+- `write(texto)`: Escribe el contenido proporcionado como argumento en el archivo.
+- `writelines(lista)`: Escribe una lista de cadenas en el archivo, donde cada cadena representa una línea.
+
+Aquí tienes un ejemplo de escritura en un archivo:
+
+```python
+with open("TXT_Archives/notes.txt", 'w', encoding="UTF-8") as archive:
+    archive.write('YouTuber: Soy Dalto. Llamado Lucas Dalto. \n')  # Sobreescribe el archivo
+    archive.writelines(['El Youtuber:', '\n', '- Soy Dalto'])  # No sobreescribe el archivo
+    for i in range(5):
+        archive.writelines(f"\nLinea {i+1} agregada.")
+```
+
+Recuerda que al utilizar `with open()`, no es necesario cerrar el archivo explícitamente, ya que se cerrará automáticamente al finalizar el bloque with.
+
+### [Archivos CSV](./CSV_Archives)
+
+**CSV (Comma Separated Values)** *es un formato de archivo ampliamente utilizado para almacenar datos tabulares en forma de texto plano*. En Python, puedes trabajar con archivos CSV utilizando la biblioteca `csv` o la biblioteca `pandas`.
+
+Aquí hay una descripción de algunas operaciones comunes en archivos CSV utilizando ambas bibliotecas:
+
+Leer un archivo CSV con la biblioteca csv:
+
+```python
+import csv
+
+with open('CSV_Archives/data.csv') as archive:
+    reader = csv.reader(archive)
+    for row in reader:
+        print(row)
+```
+Leer un archivo CSV con la biblioteca `pandas`:
+
+```python
+import pandas as pd
+
+archive = pd.read_csv("CSV_Archives/data.csv", names=["name", "lastname", "age"])
+```
+Manipulación de datos con la biblioteca `pandas`:
+
+- Cambiar el tipo de datos de una columna:
+
+```python
+archive['age'] = archive['age'].astype(str)
+```
+
+- Obtener datos de una columna específica:
+
+```python
+names = archive["name"]
+```
+
+- Ordenar el dataframe por una columna:
+
+```python
+sort_archive = archive.sort_values("age")
+sort_archive = archive.sort_values("age", ascending=False)
+```
+
+- Concatenar dos dataframes:
+
+```python
+concat_archive = pd.concat([archive, archive2])
+```
+
+- Reemplazar valores en una columna:
+
+```python
+archive['lastname'].replace("Dalto", "Maestro", inplace=True)
+```
+
+- Eliminar filas con datos faltantes:
+
+```python
+archive = archive.dropna()
+```
+
+- Exportar el dataframe limpio a un nuevo archivo CSV:
+
+```python
+archive.to_csv("CSV_Archives/clean_data.csv")
+```
+- Acceder a las primeras y últimas filas del dataframe:
+
+```python
+primeras_filas = archive.head(3)
+ultimas_filas = archive.tail(3)
+```
+
+- Obtener la forma (número de filas y columnas) del dataframe:
+
+```python
+filas_totales, columnas_totales = archive.shape
+```
+
+- Obtener información estadística del dataframe:
+
+```python
+archive_info = archive.describe()
+```
+
+- Acceder a elementos específicos del dataframe:
+
+```python
+elemento_especifico_loc = archive.loc[1, "age"]
+elemento_especifico_iloc = archive.iloc[2, 2]
+```
+
+- Acceder a columnas específicas del dataframe:
+
+```python
+apellidos_loc = archive.loc[:, "lastname"]
+apellidos = archive.iloc[:, 1]
+```
+
+- Acceder a filas específicas del dataframe:
+
+```python
+fila_3 = archive.loc[2, :]
+fila_3 = archive.iloc[2, :]
+```

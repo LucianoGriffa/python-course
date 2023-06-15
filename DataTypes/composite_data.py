@@ -1,8 +1,8 @@
 # List(be modified) - Lista(Se pueden Modificar)
-list = ["Luciano", "Luciano Griffa", True, 1.80]
+list = ["G3kSec", "G3kSec G3kSec", True, 1.80]
 
 # Tuple(cannot be modified) - Tupla(No se pueden Modificar)
-tuple = ("Luciano", "Luciano Griffa", True, 1.80, "Tuple")
+tuple = ("G3kSec", "G3kSec G3kSec", True, 1.80, "Tuple")
 
 # Set (Elements are not accessed by index, does not store duplicate data) - Conjunto (No se accede a elementos por índice, no almacena datos duplicados)
 set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
@@ -10,10 +10,10 @@ set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
 
 #Dictionary (The structure is key: value) - Diccionario (La estructura es key: value)
 dictionary = {
-  'name': "Luciano",
-  'lastname': "Griffa",
-  'github': "@lucianogriffa",
+  'name': "G3kSec",
+  'lastname': "G3kSec",
+  'github': "@G3kSec",
   'age': 17,
-  'duplicate_lastname': "Griffa"
+  'duplicate_lastname': "G3kSec"
 }
 print(dictionary['age'])

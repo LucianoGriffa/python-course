@@ -5,7 +5,7 @@ list = ["G3kSec", "G3kSec G3kSec", True, 1.80]
 tuple = ("G3kSec", "G3kSec G3kSec", True, 1.80, "Tuple")
 
 # Set (Elements are not accessed by index, does not store duplicate data) - Conjunto (No se accede a elementos por índice, no almacena datos duplicados)
-set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
+set = {"G3kSec", "G3kSec G3kSec", True, 1.80, "Set"}
 #print(set[1]) -> (can't access element - no puede acceder al elemento)
 
 #Dictionary (The structure is key: value) - Diccionario (La estructura es key: value)

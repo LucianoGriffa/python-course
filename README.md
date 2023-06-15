@@ -81,7 +81,7 @@ Fue creado por Guido van Rossum en 1991 y desde entonces ha ganado popularidad d
 
 - **Lenguaje de Tipado Dinámico**: La variable se adapta según el tipo de dato que le pasemos. Ejemplo:
 ~~~Python
-name = "luciano"
+name = "G3kSec"
 year = 2023
 ~~~
 - **Lenguaje Orientado a Objeto**: Es un estilo de programación en el que trabajamos con objetos que representan entidades y tienen características y comportamientos definidos. Los objetos se crean a partir de clases y agrupan datos y funciones relacionadas. Esto facilita la organización del código, la reutilización y la flexibilidad en el desarrollo de software.
@@ -111,7 +111,7 @@ print("Hello World")
 ```bash
 python helloworld.py
 ``` 
-![image](https://github.com/lucianogriffa/python-soydalto/assets/73656863/682c05bf-91d1-4e0c-a70f-f102b4fb0518)
+![image](https://github.com/G3kSec/python-soydalto/assets/73656863/682c05bf-91d1-4e0c-a70f-f102b4fb0518)
 
 7. Verás que se imprime "Hello World" en la terminal.
 
@@ -121,17 +121,17 @@ python helloworld.py
 #### [Datos Simples](./DataTypes/simple-data.py)
 - String - Texto
 ```python
-"Luciano"
+"G3kSec"
 
-'Griffa' 
+'G3kSec' 
 
 """Your data is:
-name: luciano
-lastname: griffa"""
+name: G3kSec
+lastname: G3kSec"""
 
 '''Your data is:
-name: luciano
-lastname: griffa'''
+name: G3kSec
+lastname: G3kSec'''
 ``` 
 - Int & Float - Números Enteros & Números Flotantes/Decimales
 ```python
@@ -147,30 +147,30 @@ False
 #### [Datos Compuestos](./DataTypes/composite-data.py)
 - List (Lista):
 ```python 
-list = ["Luciano", "Luciano Griffa", True, 1.80]
+list = ["G3kSec", "G3kSec", True, 1.80]
 ``` 
 Las listas en Python son estructuras de datos que pueden ser modificadas, lo que significa que se pueden agregar, eliminar o modificar elementos después de su creación.
 
 - Tuple (Tupla):
 ```python 
-tuple = ("Luciano", "Luciano Griffa", True, 1.80, "Tuple")
+tuple = ("G3kSec", "G3kSec", True, 1.80, "Tuple")
 ``` 
 Aquí, se define una tupla llamada `tuple` que contiene varios elementos. Las tuplas son similares a las listas, pero a diferencia de ellas, las tuplas son inmutables, lo que significa que no se pueden modificar después de su creación.
 
 - Set (Conjunto):
 ```python 
-set = {"Luciano", "Luciano Griffa", True, 1.80, "Set"}
+set = {"G3kSec", "G3kSec G3kSec", True, 1.80, "Set"}
 ``` 
 Se crea un conjunto llamado `set`. Los conjuntos son colecciones no ordenadas de elementos únicos. No se accede a los elementos por índice como en las listas y las tuplas. Los conjuntos no permiten elementos duplicados, por lo que si intentas agregar un elemento duplicado, no se almacenará en el conjunto.
 
 - Dictionary (Diccionario):
 ```python 
 dictionary = {
-  'name': "Luciano",
-  'lastname': "Griffa",
-  'github': "@lucianogriffa",
+  'name': "G3kSec",
+  'lastname': "G3kSec",
+  'github': "@G3kSecG3kSec",
   'age': 17,
-  'duplicate_lastname': "Griffa"
+  'duplicate_lastname': "G3kSec"
 }
 print(dictionary['age'])
 ``` 
@@ -183,13 +183,13 @@ Para acceder a un valor en el diccionario, se utiliza la `key` correspondiente. 
 #### [Variables](./Variables/variables.py)
 1. Definición de una variable con **camelCase**:
 ```python 
-fullName = "Luciano Griffa"
+fullName = "G3kSec G3kSec"
 ``` 
 En este caso, se define una variable llamada `fullName` utilizando la convención de nombres **camelCase**. Esto significa que la primera letra de la primera palabra está en minúscula y las primeras letras de las palabras subsiguientes están en mayúscula.
 
 2. Definición de una variable con **snake_case**:
 ```python 
-full_name = "Luciano Griffa"
+full_name = "G3kSec G3kSec"
 ``` 
 Aquí, se define una variable llamada `full_name` utilizando la convención de nombres **snake_case**. En esta convención, todas las letras están en minúscula y las palabras se separan con guiones bajos (_).
 
@@ -207,10 +207,10 @@ Aquí, se utiliza la sintaxis de **f-strings** para realizar una interpolación 
 
 5. **Operadores de pertenencia** (in / not in):
 ```python 
-print("Luciano" in welcome)  # True
-print("Luciano" not in welcome)  # False
+print("G3kSec" in welcome)  # True
+print("G3kSec" not in welcome)  # False
 ``` 
-Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"Luciano"` está presente en la cadena `welcome`. El operador in devuelve `True` si la subcadena se encuentra en la cadena y `False` en caso contrario. Por otro lado, el operador `not in` devuelve `True` si la subcadena no está presente y `False` si está presente.
+Se utilizan los **operadores de pertenencia** para verificar si la subcadena `"G3kSec"` está presente en la cadena `welcome`. El operador in devuelve `True` si la subcadena se encuentra en la cadena y `False` en caso contrario. Por otro lado, el operador `not in` devuelve `True` si la subcadena no está presente y `False` si está presente.
 
 ---
 

@@ -4,7 +4,7 @@
   
   <i>Curso impartido en YouTube por [@SoyDalto](https://www.youtube.com/@soydalto)</i>
   
-  <i>Repository Created By @lucianogriffa</i>
+  <i>Repository Created By @G3kSec</i>
   
   <i>Deja tu :star:</i>
   
@@ -168,7 +168,7 @@ Se crea un conjunto llamado `set`. Los conjuntos son colecciones no ordenadas de
 dictionary = {
   'name': "G3kSec",
   'lastname': "G3kSec",
-  'github': "@lucianogriffa",
+  'github': "@G3kSec",
   'age': 17,
   'duplicate_lastname': "G3kSec"
 }
@@ -1411,12 +1411,12 @@ Finalmente, recorremos la lista de coincidencias e imprimimos cada dirección de
 
 ```
 
-██████╗ ██╗   ██╗     ██████╗ ██████╗ ██╗███████╗███████╗ █████╗ 
-██╔══██╗╚██╗ ██╔╝    ██╔════╝ ██╔══██╗██║██╔════╝██╔════╝██╔══██╗
-██████╔╝ ╚████╔╝     ██║  ███╗██████╔╝██║█████╗  █████╗  ███████║
-██╔══██╗  ╚██╔╝      ██║   ██║██╔══██╗██║██╔══╝  ██╔══╝  ██╔══██║
-██████╔╝   ██║       ╚██████╔╝██║  ██║██║██║     ██║     ██║  ██║
-╚═════╝    ╚═╝        ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝     ╚═╝  ╚═╝
-                                                                 
+██████╗ ██╗   ██╗     ██████╗ ██████╗ ██╗  ██╗███████╗███████╗ ██████╗
+██╔══██╗╚██╗ ██╔╝    ██╔════╝ ╚════██╗██║ ██╔╝██╔════╝██╔════╝██╔════╝
+██████╔╝ ╚████╔╝     ██║  ███╗ █████╔╝█████╔╝ ███████╗█████╗  ██║     
+██╔══██╗  ╚██╔╝      ██║   ██║ ╚═══██╗██╔═██╗ ╚════██║██╔══╝  ██║     
+██████╔╝   ██║       ╚██████╔╝██████╔╝██║  ██╗███████║███████╗╚██████╗
+╚═════╝    ╚═╝        ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝
+                                                                      
 ```
 

@@ -1,15 +1,15 @@
 # String - Texto
-"G3kSec"
+"LucianoGriffa"
 
-'G3kSec' 
+'LucianoGriffa' 
 
 """Your data is:
-			name: G3kSec
-			lastname: G3kSec"""
+			name: LucianoGriffa
+			lastname: LucianoGriffa"""
 
 '''Your data is:
-			name: G3kSec
-			lastname: G3kSec'''
+			name: LucianoGriffa
+			lastname: LucianoGriffa'''
 
 # Int & Float - Números Enteros & Números Flotantes/Decimales
 10 # Int
